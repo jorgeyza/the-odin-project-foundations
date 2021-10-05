@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.recipe-image {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+
+.recipes {
+  list-style: none;
+}
+
+.recipe {
+  padding: 24px 0;
+}
+
+.recipe a {
+  color: goldenrod;
+  font-size: larger;
+}
+
+.recipe a:hover {
+  color: darksalmon;
+}
+
+.go-back,
+.go-back a {
+  color: tomato;
+}
+
+.go-back {
+  font-size: large;
+  font-weight: bold;
+}
+
+.go-back a {
+  text-decoration: none;
+}
+
+.go-back a:hover {
+  color: green;
+  text-decoration: none;
+}

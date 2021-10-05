@@ -1,0 +1,19 @@
+.odd {
+  background-color: rgb(245, 153, 153);
+  font-family: 'Verdana', sans-serif;
+}
+
+.cool {
+  font-size: 24px;
+}
+
+#first-even {
+  color: rgb(28, 28, 206);
+  font-size: 36px;
+}
+
+#second-even {
+  background-color: rgb(88, 218, 88);
+  font-size: 24px;
+  font-weight: bold;
+}
