@@ -1,0 +1,11 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "A rock-paper-scissors game",
+  "main": "index.html",
+  "scripts": {
+    "compile:watch": "sass scss/main.scss style.css --watch"
+  },
+  "author": "Jorge Eyzaguirre",
+  "license": "ISC"
+}

@@ -4,8 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rock-Paper-Scissors</title>
-    <script src="script.js" defer></script>
+    <!-- <script src="script.js" defer></script> -->
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__title">ROCK-PAPER-SCISSORS</h1>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="scorezone">
+          <!-- PLAYER -->
+          <div class="playerside">
+            <div class="playerside__score">2</div>
+            <div class="playerside__icon-box">
+              <img
+                src="images/Scissors.svg"
+                alt="Scissors icon"
+                class="player-choice"
+              />
+            </div>
+            <div class="playerside__name">PLAYER</div>
+          </div>
+          <div class="vs">VS</div>
+
+          <!-- COMPUTER -->
+          <div class="playerside">
+            <div class="playerside__score">3</div>
+            <div class="playerside__icon-box">
+              <img
+                src="images/Scissors.svg"
+                alt="Scissors icon"
+                class="playerside__icon"
+              />
+            </div>
+            <div class="playerside__name">COMPUTER</div>
+          </div>
+        </div>
+
+        <!-- MESSAGE -->
+        <div class="messagezone">
+          <div class="messagezone__winner">PLAYER WINS!</div>
+          <div class="messagezone__message">ROCK BEATS SCISSORS</div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="electionzone">
+          <p class="electionzone__message">CHOOSE YOUR NEXT MOVE:</p>
+          <div class="electionzone__buttons">
+            <div class="button" id="scissors">
+              <div class="button__icon-box">
+                <img
+                  src="images/Scissors.svg"
+                  alt="Scissors icon"
+                  class="button__icon"
+                />
+              </div>
+            </div>
+            <div class="button" id="rock">
+              <div class="button__icon-box">
+                <img
+                  src="images/Rock.svg"
+                  alt="Rock icon"
+                  class="button__icon"
+                />
+              </div>
+            </div>
+            <div class="button" id="paper">
+              <div class="button__icon-box">
+                <img
+                  src="images/Paper.svg"
+                  alt="Paper icon"
+                  class="button__icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
