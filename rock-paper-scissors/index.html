@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/Scissors.svg" type="image/x-icon" />
     <title>Rock-Paper-Scissors</title>
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -17,26 +18,32 @@
         <div class="scorezone">
           <!-- PLAYER -->
           <div class="playerside">
-            <div class="playerside__score">2</div>
-            <div class="playerside__icon-box">
-              <img
-                src="images/Scissors.svg"
-                alt="Scissors icon"
-                class="player-choice"
-              />
-            </div>
-            <div class="playerside__name">PLAYER</div>
-          </div>
-          <div class="vs">VS</div>
-
-          <!-- COMPUTER -->
-          <div class="playerside">
-            <div class="playerside__score">3</div>
+            <div class="playerside__score" id="player1-score">0</div>
             <div class="playerside__icon-box">
               <img
                 src="images/Scissors.svg"
                 alt="Scissors icon"
                 class="playerside__icon"
+                id="player1-choice"
+              />
+            </div>
+            <div class="playerside__name">PLAYER</div>
+          </div>
+          <div class="round-and-vs">
+            <p class="round">ROUND <span class="round-number">1</span></p>
+            <p class="vs">VS</p>
+            <div class="button button--restart" id="paper">RESTART GAME?</div>
+          </div>
+
+          <!-- COMPUTER -->
+          <div class="playerside">
+            <div class="playerside__score" id="player2-score">0</div>
+            <div class="playerside__icon-box">
+              <img
+                src="images/Scissors.svg"
+                alt="Scissors icon"
+                class="playerside__icon"
+                id="player2-choice"
               />
             </div>
             <div class="playerside__name">COMPUTER</div>
@@ -45,8 +52,8 @@
 
         <!-- MESSAGE -->
         <div class="messagezone">
-          <div class="messagezone__winner">PLAYER WINS!</div>
-          <div class="messagezone__message">ROCK BEATS SCISSORS</div>
+          <div class="messagezone__winner">WHO WILL WIN?</div>
+          <div class="messagezone__message">LET'S START</div>
         </div>
 
         <!-- BUTTONS -->
@@ -54,31 +61,17 @@
           <p class="electionzone__message">CHOOSE YOUR NEXT MOVE:</p>
           <div class="electionzone__buttons">
             <div class="button" id="scissors">
-              <div class="button__icon-box">
-                <img
-                  src="images/Scissors.svg"
-                  alt="Scissors icon"
-                  class="button__icon"
-                />
-              </div>
+              <img
+                src="images/Scissors.svg"
+                alt="Scissors"
+                class="button__icon"
+              />
             </div>
             <div class="button" id="rock">
-              <div class="button__icon-box">
-                <img
-                  src="images/Rock.svg"
-                  alt="Rock icon"
-                  class="button__icon"
-                />
-              </div>
+              <img src="images/Rock.svg" alt="Rock" class="button__icon" />
             </div>
             <div class="button" id="paper">
-              <div class="button__icon-box">
-                <img
-                  src="images/Paper.svg"
-                  alt="Paper icon"
-                  class="button__icon"
-                />
-              </div>
+              <img src="images/Paper.svg" alt="Paper" class="button__icon" />
             </div>
           </div>
         </div>
