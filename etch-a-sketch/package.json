@@ -1,0 +1,11 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch": "sass sass/main.scss style.css"
+  },
+  "author": "Jorge Eyzaguirre",
+  "license": "ISC"
+}
