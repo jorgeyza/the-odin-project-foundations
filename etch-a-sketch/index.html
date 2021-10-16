@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Etch-a-Sketch</title>
   </head>
-  <body></body>
+  <body class="body">
+    <header class="header"><h1 class="title">Etch-a-Sketch</h1></header>
+    <main class="main">
+      <div class="container">
+        <div class="controls">
+          <input type="color" class="color-circle" />
+          <div class="button active" data-action="normal">Normal</div>
+          <div class="button button--rainbow" data-action="rainbow">
+            Rainbow
+          </div>
+          <div class="button" data-action="lighten">Lighten</div>
+          <div class="button" data-action="darken">Darken</div>
+          <form class="form">
+            <label for="grid-control" class="label"
+              >Grid: <span class="label__grid-size">16x16</span></label
+            >
+            <input
+              type="range"
+              name="grid-control"
+              class="input"
+              min="1"
+              max="64"
+              value="16"
+            />
+          </form>
+          <div class="button" data-action="reset">Reset</div>
+        </div>
+        <div class="grid"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="credits">
+        Built by:
+        <a href="https://github.com/jorgeyza" class="credits__link"
+          >Jorge Eyzaguirre</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>

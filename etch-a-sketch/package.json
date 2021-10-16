@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "watch": "sass sass/main.scss style.css"
+    "watch": "sass sass/main.scss style.css --watch"
   },
   "author": "Jorge Eyzaguirre",
   "license": "ISC"

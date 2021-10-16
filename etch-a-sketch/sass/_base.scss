@@ -6,6 +6,10 @@
   box-sizing: inherit;
 }
 
-body {
+html {
   box-sizing: border-box;
+}
+
+body {
+  color: var(--color-neutral-black);
 }
