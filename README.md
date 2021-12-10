@@ -14,4 +14,4 @@ To see the content, download the repository and open the corresponding index.htm
 
 ## [Landing Page](./landing-page)
 
-![Rock-Paper-Scissors](./screenReadmeGifs/landing-page.gif)
+![Landing-Page](./screenReadmeGifs/landing-page.gif)
